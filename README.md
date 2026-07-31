@@ -2,23 +2,7 @@
 
 This dataset tracks occurrences of the word *wayang* ("وايڠ") in two Jawi-script
 Malay-language newspapers published in Singapore: **Warta Malaya** (1930s) and
-**Utusan Melayu** (1950s).
-
-The 100 occurrences were identified from a random sample using a Gemma-based
-model from AI Singapore, then manually verified.
-
-## Why this matters
-
-*Wayang* is a highly polysemous word. It can refer to puppetry (*wayang
-kulit*, *wayang golek*), to stage performances such as Chinese opera,
-*bangsawan*, or *kethoprak*, and to film — often as *wayang gambar*, or
-simply implied from context. Because a single term spans such a wide
-semantic range, tracking how its usage is distributed across these senses
-over time offers a window into semantic narrowing: as cinema became more
-prominent in Singapore, *wayang* increasingly came to mean "film," at the
-expense of its older theatrical and puppetry senses. Comparing Warta Malaya
-(1930s) against Utusan Melayu (1950s) lets us observe this shift
-quantitatively rather than anecdotally.
+**Utusan Melayu** (1950s). The dasets consists of a random sample of 100 occurrences. Each occurrence was classified into three categories `film`, `theatre/opera` (including Chinese opera, bangsawan and kethoprak), `puppetry` (wayang golek or wayang kulit), or `metaphor` using a custom machine learning model developed by [The Jawi AI Project](https://culturalheritagenus.github.io/jawi/), then manually verified.
 
 ## Files
 
@@ -33,6 +17,10 @@ quantitatively rather than anecdotally.
 - `full_segment` — the Jawi text surrounding the occurrence
 - `type` — sense in which *wayang* is used: `film`, `theatre/opera`, `puppetry`, or `metaphor`
 
+## Results
+
+The following two images show the occurrences of these different senses as relative counts, and per newspaper. This preliminary data shows that film is the primary sense associated with wayang, even in the 1930s. But the most surprising finding is that wayang as metaphor became less common in the 1950s.
+
 ### `per_type.png`
 
 ![Wayang occurrences per type](per_type.png)
@@ -44,3 +32,7 @@ Total count of occurrences by type across both newspapers.
 ![Wayang occurrences per type per newspaper](per_type_newspaper.png)
 
 Same breakdown by type, split by newspaper (WM vs UM).
+
+## Funding
+
+This project is supported by the [National Heritage Board](https://www.nhb.gov.sg/)(Singapore), through grant HRG-068 – Intangible Cultural Heritage in Malay-language Periodicals (1930-1970).
