@@ -35,4 +35,4 @@ Same breakdown by type, split by newspaper (WM vs UM).
 
 ## Funding
 
-This project is supported by the [National Heritage Board](https://www.nhb.gov.sg/)(Singapore), through grant HRG-068 – Intangible Cultural Heritage in Malay-language Periodicals (1930-1970).
+This project is supported by the [National Heritage Board](https://www.nhb.gov.sg/)(Singapore), through grant HRG-068 – Intangible Cultural Heritage in Malay-language Periodicals (1930-1970).  __Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Heritage Board, Singapore.__
